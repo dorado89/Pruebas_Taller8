@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "scripts": {
+    "test": "karma start test/config/karma.conf.js"
+  },
+  "dependencies": {
+    "angular": "^1.4.3",
+    "todomvc-common": "^1.0.0",
+    "todomvc-app-css": "^1.0.1",
+    "angular-route": "^ 1.4.3",
+    "angular-resource": "^1.4.3"
+  },
+  "devDependencies": {
+    "@stryker-mutator/core": "^2.1.0",
+    "@stryker-mutator/html-reporter": "^2.1.0",
+    "@stryker-mutator/jasmine-framework": "^2.1.0",
+    "@stryker-mutator/jasmine-runner": "^2.1.0",
+    "@stryker-mutator/javascript-mutator": "^2.1.0",
+    "@stryker-mutator/karma-runner": "^2.1.0",
+    "angular-mocks": "^1.3.12",
+    "jasmine": "^3.5.0",
+    "karma": "^0.13.0",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-firefox-launcher": "^0.1.7",
+    "karma-jasmine": "^0.2.2"
+  }
+}

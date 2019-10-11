@@ -1,0 +1,107 @@
+MUTANT 1:	MM benchmark.js Line 13:	`const blueStyledString = 'the fox jumps' + chalk.blue('over the lazy dog') + '!';` > `const blueStyledString = 'the fox jumps' + chalk.blue('over the lazy dog') - '!';'`
+MUTANT 2:	MM benchmark.js Line 13:	`const blueStyledString = 'the fox jumps' + chalk.blue('over the lazy dog') + '!';` > `const blueStyledString = 'the fox jumps' - chalk.blue('over the lazy dog') + '!';'`
+MUTANT 3:	NLM benchmark.js Line 6:	`set('iterations', 1000000);` > `set('iterations', 0);'`
+MUTANT 4:	NLM benchmark.js Line 6:	`set('iterations', 1000000);` > `set('iterations', 999999);'`
+MUTANT 5:	NLM benchmark.js Line 6:	`set('iterations', 1000000);` > `set('iterations', 1000001);'`
+MUTANT 6:	NLM benchmark.js Line 6:	`set('iterations', 1000000);` > `set('iterations', 75554);'`
+MUTANT 7:	RFCAM benchmark.js Line 3:	`const chalk = require('.');` > `const chalk = require();'`
+MUTANT 8:	RFCAM benchmark.js Line 5:	`suite('chalk', () => {` > `suite(() => {'`
+MUTANT 9:	RFCAM benchmark.js Line 5:	`suite('chalk', () => {` > `suite('chalk'uite('chalk', () => {'`
+MUTANT 10:	RFCAM benchmark.js Line 6:	`set('iterations', 1000000);` > `set(1000000);'`
+MUTANT 11:	RFCAM benchmark.js Line 6:	`set('iterations', 1000000);` > `set('iterations');'`
+MUTANT 12:	RFCAM benchmark.js Line 13:	`const blueStyledString = 'the fox jumps' + chalk.blue('over the lazy dog') + '!';` > `const blueStyledString = 'the fox jumps' + chalk.blue() + '!';'`
+MUTANT 13:	RFCAM benchmark.js Line 15:	`bench('1 style', () => {` > `bench(() => {'`
+MUTANT 14:	RFCAM benchmark.js Line 15:	`bench('1 style', () => {` > `bench('1 style'ench('1 style', () => {'`
+MUTANT 15:	RFCAM benchmark.js Line 16:	`chalk.red('the fox jumps over the lazy dog');` > `chalk.red();'`
+MUTANT 16:	RFCAM benchmark.js Line 19:	`bench('2 styles', () => {` > `bench(() => {'`
+MUTANT 17:	RFCAM benchmark.js Line 19:	`bench('2 styles', () => {` > `bench('2 styles'ench('2 styles', () => {'`
+MUTANT 18:	RFCAM benchmark.js Line 20:	`chalk.blue.bgRed('the fox jumps over the lazy dog');` > `chalk.blue.bgRed();'`
+MUTANT 19:	RFCAM benchmark.js Line 23:	`bench('3 styles', () => {` > `bench(() => {'`
+MUTANT 20:	RFCAM benchmark.js Line 23:	`bench('3 styles', () => {` > `bench('3 styles'ench('3 styles', () => {'`
+MUTANT 21:	RFCAM benchmark.js Line 24:	`chalk.blue.bgRed.bold('the fox jumps over the lazy dog');` > `chalk.blue.bgRed.bold();'`
+MUTANT 22:	RFCAM benchmark.js Line 27:	`bench('cached: 1 style', () => {` > `bench(() => {'`
+MUTANT 23:	RFCAM benchmark.js Line 27:	`bench('cached: 1 style', () => {` > `bench('cached: 1 style'ench('cached: 1 style', () => {'`
+MUTANT 24:	RFCAM benchmark.js Line 28:	`chalkRed('the fox jumps over the lazy dog');` > `chalkRed();'`
+MUTANT 25:	RFCAM benchmark.js Line 31:	`bench('cached: 2 styles', () => {` > `bench(() => {'`
+MUTANT 26:	RFCAM benchmark.js Line 31:	`bench('cached: 2 styles', () => {` > `bench('cached: 2 styles'ench('cached: 2 styles', () => {'`
+MUTANT 27:	RFCAM benchmark.js Line 32:	`chalkBlueBgRed('the fox jumps over the lazy dog');` > `chalkBlueBgRed();'`
+MUTANT 28:	RFCAM benchmark.js Line 35:	`bench('cached: 3 styles', () => {` > `bench(() => {'`
+MUTANT 29:	RFCAM benchmark.js Line 35:	`bench('cached: 3 styles', () => {` > `bench('cached: 3 styles'ench('cached: 3 styles', () => {'`
+MUTANT 30:	RFCAM benchmark.js Line 36:	`chalkBlueBgRedBold('the fox jumps over the lazy dog');` > `chalkBlueBgRedBold();'`
+MUTANT 31:	RFCAM benchmark.js Line 39:	`bench('cached: 1 style with newline', () => {` > `bench(() => {'`
+MUTANT 32:	RFCAM benchmark.js Line 39:	`bench('cached: 1 style with newline', () => {` > `bench('cached: 1 style with newline'ench('cached: 1 style with newline', () => {'`
+MUTANT 33:	RFCAM benchmark.js Line 40:	`chalkRed('the fox jumps\nover the lazy dog');` > `chalkRed();'`
+MUTANT 34:	RFCAM benchmark.js Line 43:	`bench('cached: 1 style nested intersecting', () => {` > `bench(() => {'`
+MUTANT 35:	RFCAM benchmark.js Line 43:	`bench('cached: 1 style nested intersecting', () => {` > `bench('cached: 1 style nested intersecting'ench('cached: 1 style nested intersecting', () => {'`
+MUTANT 36:	RFCAM benchmark.js Line 44:	`chalkRed(blueStyledString);` > `chalkRed();'`
+MUTANT 37:	RFCAM benchmark.js Line 47:	`bench('cached: 1 style nested non-intersecting', () => {` > `bench(() => {'`
+MUTANT 38:	RFCAM benchmark.js Line 47:	`bench('cached: 1 style nested non-intersecting', () => {` > `bench('cached: 1 style nested non-intersecting'ench('cached: 1 style nested non-intersecting', () => {'`
+MUTANT 39:	RFCAM benchmark.js Line 48:	`chalkBgRed(blueStyledString);` > `chalkBgRed();'`
+MUTANT 40:	RLM Commented line 3:	const chalk = require('.');
+MUTANT 41:	RLM Commented line 6:	set('iterations', 1000000);
+MUTANT 42:	RLM Commented line 8:	const chalkRed = chalk.red;
+MUTANT 43:	RLM Commented line 9:	const chalkBgRed = chalk.bgRed;
+MUTANT 44:	RLM Commented line 10:	const chalkBlueBgRed = chalk.blue.bgRed;
+MUTANT 45:	RLM Commented line 11:	const chalkBlueBgRedBold = chalk.blue.bgRed.bold;
+MUTANT 46:	RLM Commented line 13:	const blueStyledString = 'the fox jumps' + chalk.blue('over the lazy dog') + '!';
+MUTANT 47:	RLM Commented line 16:	chalk.red('the fox jumps over the lazy dog');
+MUTANT 48:	RLM Commented line 20:	chalk.blue.bgRed('the fox jumps over the lazy dog');
+MUTANT 49:	RLM Commented line 24:	chalk.blue.bgRed.bold('the fox jumps over the lazy dog');
+MUTANT 50:	RLM Commented line 28:	chalkRed('the fox jumps over the lazy dog');
+MUTANT 51:	RLM Commented line 32:	chalkBlueBgRed('the fox jumps over the lazy dog');
+MUTANT 52:	RLM Commented line 36:	chalkBlueBgRedBold('the fox jumps over the lazy dog');
+MUTANT 53:	RLM Commented line 40:	chalkRed('the fox jumps\nover the lazy dog');
+MUTANT 54:	RLM Commented line 44:	chalkRed(blueStyledString);
+MUTANT 55:	RLM Commented line 48:	chalkBgRed(blueStyledString);
+MUTANT 56:	RFM Lines 5-50: Commented function (anonymous / assigned)
+MUTANT 57:	RFM Lines 15-17: Commented function (anonymous / assigned)
+MUTANT 58:	RFM Lines 19-21: Commented function (anonymous / assigned)
+MUTANT 59:	RFM Lines 23-25: Commented function (anonymous / assigned)
+MUTANT 60:	RFM Lines 27-29: Commented function (anonymous / assigned)
+MUTANT 61:	RFM Lines 31-33: Commented function (anonymous / assigned)
+MUTANT 62:	RFM Lines 35-37: Commented function (anonymous / assigned)
+MUTANT 63:	RFM Lines 39-41: Commented function (anonymous / assigned)
+MUTANT 64:	RFM Lines 43-45: Commented function (anonymous / assigned)
+MUTANT 65:	RFM Lines 47-49: Commented function (anonymous / assigned)
+MUTANT 66:	SLM benchmark.js Line 5:	`suite('chalk', () => {` > `suite('', () => {'`
+MUTANT 67:	SLM benchmark.js Line 5:	`suite('chalk', () => {` > `suite('NRUbJ', () => {'`
+MUTANT 68:	SLM benchmark.js Line 6:	`set('iterations', 1000000);` > `set('', 1000000);'`
+MUTANT 69:	SLM benchmark.js Line 6:	`set('iterations', 1000000);` > `set('zmH0C4kNXl', 1000000);'`
+MUTANT 70:	SLM benchmark.js Line 13:	`const blueStyledString = 'the fox jumps' + chalk.blue('over the lazy dog') + '!';` > `const blueStyledString = '' + chalk.blue('over the lazy dog') + '!';'`
+MUTANT 71:	SLM benchmark.js Line 13:	`const blueStyledString = 'the fox jumps' + chalk.blue('over the lazy dog') + '!';` > `const blueStyledString = 'po3VHvzQZAFoW' + chalk.blue('over the lazy dog') + '!';'`
+MUTANT 72:	SLM benchmark.js Line 13:	`const blueStyledString = 'the fox jumps' + chalk.blue('over the lazy dog') + '!';` > `const blueStyledString = 'the fox jumps' + chalk.blue('') + '!';'`
+MUTANT 73:	SLM benchmark.js Line 13:	`const blueStyledString = 'the fox jumps' + chalk.blue('over the lazy dog') + '!';` > `const blueStyledString = 'the fox jumps' + chalk.blue('mZTrpygRwkS1ZMrJl') + '!';'`
+MUTANT 74:	SLM benchmark.js Line 13:	`const blueStyledString = 'the fox jumps' + chalk.blue('over the lazy dog') + '!';` > `const blueStyledString = 'the fox jumps' + chalk.blue('over the lazy dog') + '';'`
+MUTANT 75:	SLM benchmark.js Line 13:	`const blueStyledString = 'the fox jumps' + chalk.blue('over the lazy dog') + '!';` > `const blueStyledString = 'the fox jumps' + chalk.blue('over the lazy dog') + 'I';'`
+MUTANT 76:	SLM benchmark.js Line 15:	`bench('1 style', () => {` > `bench('', () => {'`
+MUTANT 77:	SLM benchmark.js Line 15:	`bench('1 style', () => {` > `bench('J68eTNo', () => {'`
+MUTANT 78:	SLM benchmark.js Line 16:	`chalk.red('the fox jumps over the lazy dog');` > `chalk.red('');'`
+MUTANT 79:	SLM benchmark.js Line 16:	`chalk.red('the fox jumps over the lazy dog');` > `chalk.red('J5M1O5os6P9aosrWVpTrD43u8xNHqfM');'`
+MUTANT 80:	SLM benchmark.js Line 19:	`bench('2 styles', () => {` > `bench('', () => {'`
+MUTANT 81:	SLM benchmark.js Line 19:	`bench('2 styles', () => {` > `bench('nSWtFWsv', () => {'`
+MUTANT 82:	SLM benchmark.js Line 20:	`chalk.blue.bgRed('the fox jumps over the lazy dog');` > `chalk.blue.bgRed('');'`
+MUTANT 83:	SLM benchmark.js Line 20:	`chalk.blue.bgRed('the fox jumps over the lazy dog');` > `chalk.blue.bgRed('7L11XTaXThlElbb506wL0SAFqCUZygn');'`
+MUTANT 84:	SLM benchmark.js Line 23:	`bench('3 styles', () => {` > `bench('', () => {'`
+MUTANT 85:	SLM benchmark.js Line 23:	`bench('3 styles', () => {` > `bench('6OmckQZ5', () => {'`
+MUTANT 86:	SLM benchmark.js Line 24:	`chalk.blue.bgRed.bold('the fox jumps over the lazy dog');` > `chalk.blue.bgRed.bold('');'`
+MUTANT 87:	SLM benchmark.js Line 24:	`chalk.blue.bgRed.bold('the fox jumps over the lazy dog');` > `chalk.blue.bgRed.bold('xIbOFGQ4EbQgs34cp6Xq3V2hx3KpRHb');'`
+MUTANT 88:	SLM benchmark.js Line 27:	`bench('cached: 1 style', () => {` > `bench('', () => {'`
+MUTANT 89:	SLM benchmark.js Line 27:	`bench('cached: 1 style', () => {` > `bench('UT6ggyZwuOBWpaE', () => {'`
+MUTANT 90:	SLM benchmark.js Line 28:	`chalkRed('the fox jumps over the lazy dog');` > `chalkRed('');'`
+MUTANT 91:	SLM benchmark.js Line 28:	`chalkRed('the fox jumps over the lazy dog');` > `chalkRed('9nQhw33S7hcguAckTIJ9kV78Fw4kyOS');'`
+MUTANT 92:	SLM benchmark.js Line 31:	`bench('cached: 2 styles', () => {` > `bench('', () => {'`
+MUTANT 93:	SLM benchmark.js Line 31:	`bench('cached: 2 styles', () => {` > `bench('u0Ppnwc328uRpfT6', () => {'`
+MUTANT 94:	SLM benchmark.js Line 32:	`chalkBlueBgRed('the fox jumps over the lazy dog');` > `chalkBlueBgRed('');'`
+MUTANT 95:	SLM benchmark.js Line 32:	`chalkBlueBgRed('the fox jumps over the lazy dog');` > `chalkBlueBgRed('H0FEKAa6lMhJb99Nvag1e04BwVSd9Hc');'`
+MUTANT 96:	SLM benchmark.js Line 35:	`bench('cached: 3 styles', () => {` > `bench('', () => {'`
+MUTANT 97:	SLM benchmark.js Line 35:	`bench('cached: 3 styles', () => {` > `bench('0OvIqOtRoLIXcq0z', () => {'`
+MUTANT 98:	SLM benchmark.js Line 36:	`chalkBlueBgRedBold('the fox jumps over the lazy dog');` > `chalkBlueBgRedBold('');'`
+MUTANT 99:	SLM benchmark.js Line 36:	`chalkBlueBgRedBold('the fox jumps over the lazy dog');` > `chalkBlueBgRedBold('cUGGogdVoMwaOI1C6h62gyevVWfehMR');'`
+MUTANT 100:	SLM benchmark.js Line 39:	`bench('cached: 1 style with newline', () => {` > `bench('', () => {'`
+MUTANT 101:	SLM benchmark.js Line 39:	`bench('cached: 1 style with newline', () => {` > `bench('rGN4A5CbTpygbz5bMkQUP2yu9aPA', () => {'`
+MUTANT 102:	SLM benchmark.js Line 40:	`chalkRed('the fox jumps\nover the lazy dog');` > `chalkRed('the fox jumps\nover the lazy dog');'`
+MUTANT 103:	SLM benchmark.js Line 40:	`chalkRed('the fox jumps\nover the lazy dog');` > `chalkRed('gzrxwnfva0EV3xiWh651NkfBQ2JlxZ2');'`
+MUTANT 104:	SLM benchmark.js Line 43:	`bench('cached: 1 style nested intersecting', () => {` > `bench('', () => {'`
+MUTANT 105:	SLM benchmark.js Line 43:	`bench('cached: 1 style nested intersecting', () => {` > `bench('KKOqVHJFnq9WbwmEWGJuiCvJ2GxFX9555qb', () => {'`
+MUTANT 106:	SLM benchmark.js Line 47:	`bench('cached: 1 style nested non-intersecting', () => {` > `bench('', () => {'`
+MUTANT 107:	SLM benchmark.js Line 47:	`bench('cached: 1 style nested non-intersecting', () => {` > `bench('npM2pEXCMz8ExH7TVTKgrfT0xkxkSg5qDf6ABUD', () => {'`
