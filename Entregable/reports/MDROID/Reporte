@@ -1,0 +1,13 @@
+Se escogió los siguientes 10 de los mutantes generado:
+org.gnucash.android-mutant14//AndroidManifest.xml; ActivityNotDefined in line 109
+org.gnucash.android-mutant75/java/org/gnucash/android/ui/passcode/KeyboardFragment.java; InvalidIDFindView in line 85
+org.gnucash.android-mutant912/java/org/gnucash/android/ui/passcode/PasscodeLockActivity.java; DifferentActivityIntentDefinition in line 64
+org.gnucash.android-mutant224/java/org/gnucash/android/ui/transaction/dialog/TransferFundsDialogFragment.java; BuggyGUIListener in line 168
+org.gnucash.android-mutant78/java/org/gnucash/android/model/ScheduledAction.java; InvalidDate in line 219
+org.gnucash.android-mutant669/java/org/gnucash/android/util/QualifiedAccountNameCursorAdapter.java; FindViewByIdReturnsNull in line 69
+org.gnucash.android-mutant747/java/org/gnucash/android/db/adapter/TransactionsDbAdapter.java; ClosingNullCursor in line 477
+org.gnucash.android-mutant795/java/org/gnucash/android/db/BookDbHelper.java; InvalidFilePath in line 173
+org.gnucash.android-mutant850/java/org/gnucash/android/ui/passcode/KeyboardFragment.java; ViewComponentNotVisible in line 59
+org.gnucash.android-mutant864//AndroidManifest.xml; MissingPermissionManifest in line 35
+Pruebas JUnit: 8 matados y 2 sobrevivieron
+Pruebas Monkey: 5 matados y 5 sobrevivieron
